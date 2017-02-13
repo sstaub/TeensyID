@@ -2,7 +2,9 @@
 Teensy (USB-)Serialnumber, Kinetis ChipUID, and MAC-Address
 
 Based on the TeensMAC library from Frank Boesing
+
 Should work with Teensy LC & Teensy 3.0 .. 3.6
+
 The new library was only tested with Teensy 3.5
 
 Example:
