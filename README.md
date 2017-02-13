@@ -1,5 +1,5 @@
 # TeensyID
-Teensy (USB-)Serialnumber, Kinetis ChipUID, and MAC-Address
+Teensy (USB-)Serialnumber, Kinetis ChipUID and MAC-Address
 
 Based on the TeensMAC library from Frank Boesing
 
