@@ -1,7 +1,9 @@
 # TeensyID
-Teensy Serial# UUID and MAC
+Teensy (USB-)Serialnumber, Kinetis ChipUID, and MAC-Address
 
-Works with Teensy LC & Teensy 3.0 .. 3.6
+Based on the TeensMAC library from Frank Boesing
+Should work with Teensy LC & Teensy 3.0 .. 3.6
+The new library was only tested with Teensy 3.5
 
 Example:
 
@@ -9,7 +11,7 @@ Example:
 #include <TeensyID.h>
 
 uint8_t mac[6];
-uint8_t uid[16];
+uint8_t uid[4];
 uint8_t serial[4];
 
 void setup() {
