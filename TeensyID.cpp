@@ -96,11 +96,11 @@ static uint32_t _getserialhw(void) {
 	void teensyMAC(uint8_t *mac) {
 		uint64_t mac64 = 0x04E9E5000000ULL | (*(uint32_t*)(MY_SYSREGISTERFILE));
 		mac[0] = mac64 >> 40;
-	  mac[1] = mac64 >> 32;
-	  mac[2] = mac64 >> 24;
-	  mac[3] = mac64 >> 16;
-	  mac[4] = mac64 >> 8;
-	  mac[5] = mac64;
+	 	mac[1] = mac64 >> 32;
+	 	mac[2] = mac64 >> 24;
+	 	mac[3] = mac64 >> 16;
+	 	mac[4] = mac64 >> 8;
+	 	mac[5] = mac64;
 		}
 
 	const char* teensyMAC(void) {
@@ -153,63 +153,63 @@ static uint32_t _getserialhw(void) {
 	void teensyMAC(uint8_t *mac) {
 		uint64_t mac64 = 0x04E9E5000000ULL | _getserialhw();
 		mac[0] = mac64 >> 40;
-	  mac[1] = mac64 >> 32;
-	  mac[2] = mac64 >> 24;
-	  mac[3] = mac64 >> 16;
-	  mac[4] = mac64 >> 8;
-	  mac[5] = mac64;
+	 	mac[1] = mac64 >> 32;
+		mac[2] = mac64 >> 24;
+	  	mac[3] = mac64 >> 16;
+	  	mac[4] = mac64 >> 8;
+	  	mac[5] = mac64;
 		}
 	const char* teensyMAC(void) {
 		uint64_t mac64 = 0x04E9E5000000ULL | _getserialhw();
 		uint8_t mac[6];
 		mac[0] = mac64 >> 40;
-	  mac[1] = mac64 >> 32;
-	  mac[2] = mac64 >> 24;
-	  mac[3] = mac64 >> 16;
-	  mac[4] = mac64 >> 8;
-	  mac[5] = mac64;
+	  	mac[1] = mac64 >> 32;
+	  	mac[2] = mac64 >> 24;
+	  	mac[3] = mac64 >> 16;
+	  	mac[4] = mac64 >> 8;
+	  	mac[5] = mac64;
 		static char teensyMac[18];
 		sprintf(teensyMac, "%02x:%02x:%02x:%02x:%02x:%02x", mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
-	  return teensyMac;
+	  	return teensyMac;
 		}
 #endif
 
 #if defined (__MKL26Z64__) // 80bit UID Teensy LC
 
 	void kinetisUID(uint32_t *uid) {
-		uid[1] = SIM_UIDMH;
-  	uid[2] = SIM_UIDML;
-  	uid[3] = SIM_UIDL;
+		uid[0] = SIM_UIDMH;
+  		uid[1] = SIM_UIDML;
+  		uid[2] = SIM_UIDL;
 		}
 
 	const char* kinetisUID(void) {
 		uint32_t uid[3];
 		static char uidString[27];
-		uid[1] = SIM_UIDMH;
-  	uid[2] = SIM_UIDML;
-  	uid[3] = SIM_UIDL;
-  	sprintf(uidString, "%08x-%08x-%08x", uid[0], uid[1], uid[2]);
+		uid[0] = SIM_UIDMH;
+  		uid[1] = SIM_UIDML;
+  		uid[2] = SIM_UIDL;
+  		sprintf(uidString, "%08x-%08x-%08x", uid[0], uid[1], uid[2]);
 		return uidString;
 	}
 
 #elif defined (__MK20DX128__) || defined (__MK20DX256__) || defined (__MK64FX512__) || defined (__MK66FX1M0__) // 128bit UID Teensy 3.0, 3.1, 3.2, 3.5, 3.6
 
 	void kinetisUID(uint32_t *uid) {
-  	uid[0] = SIM_UIDH;
-  	uid[1] = SIM_UIDMH;
-  	uid[2] = SIM_UIDML;
-  	uid[3] = SIM_UIDL;
+  		uid[0] = SIM_UIDH;
+  		uid[1] = SIM_UIDMH;
+  		uid[2] = SIM_UIDML;
+  		uid[3] = SIM_UIDL;
 		}
 
 	const char* kinetisUID(void) {
 		uint32_t uid[4];
 		static char uidString[36];
 		uid[0] = SIM_UIDH;
-  	uid[1] = SIM_UIDMH;
-  	uid[2] = SIM_UIDML;
-  	uid[3] = SIM_UIDL;
-  	sprintf(uidString, "%08x-%08x-%08x-%08x", uid[0], uid[1], uid[2], uid[3]);
+  		uid[1] = SIM_UIDMH;
+  		uid[2] = SIM_UIDML;
+  		uid[3] = SIM_UIDL;
+  		sprintf(uidString, "%08x-%08x-%08x-%08x", uid[0], uid[1], uid[2], uid[3]);
 		return uidString;
-	}
+		}
 
 #endif
