@@ -90,6 +90,9 @@ static uint32_t getTeensySerial(void) {
 	 	mac[3] = mac64 >> 16;
 	 	mac[4] = mac64 >> 8;
 	 	mac[5] = mac64;
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 		}
 
@@ -166,8 +169,13 @@ static uint32_t getTeensySerial(void) {
 	void kinetisUID(uint32_t *uid) {
 		uid[0] = SIM_UIDMH;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		uid[1] = SIM_UIDML;
 		uid[2] = SIM_UIDL;
+=======
+  		uid[1] = SIM_UIDML;
+  		uid[2] = SIM_UIDL;
+>>>>>>> origin/master
 =======
   		uid[1] = SIM_UIDML;
   		uid[2] = SIM_UIDL;
@@ -178,13 +186,19 @@ static uint32_t getTeensySerial(void) {
 		uint32_t uid[3];
 		static char uidString[27];
 <<<<<<< HEAD
+<<<<<<< HEAD
 		kinetisUID(uid);
 		sprintf(uidString, "%08x-%08x-%08x", uid[0], uid[1], uid[2]);
 =======
+=======
+>>>>>>> origin/master
 		uid[0] = SIM_UIDMH;
   		uid[1] = SIM_UIDML;
   		uid[2] = SIM_UIDL;
   		sprintf(uidString, "%08x-%08x-%08x", uid[0], uid[1], uid[2]);
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 		return uidString;
 	}
@@ -202,14 +216,20 @@ static uint32_t getTeensySerial(void) {
 		uint32_t uid[4];
 		static char uidString[36];
 <<<<<<< HEAD
+<<<<<<< HEAD
 		kinetisUID(uid);
   	sprintf(uidString, "%08x-%08x-%08x-%08x", uid[0], uid[1], uid[2], uid[3]);
 =======
+=======
+>>>>>>> origin/master
 		uid[0] = SIM_UIDH;
   		uid[1] = SIM_UIDMH;
   		uid[2] = SIM_UIDML;
   		uid[3] = SIM_UIDL;
   		sprintf(uidString, "%08x-%08x-%08x-%08x", uid[0], uid[1], uid[2], uid[3]);
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 		return uidString;
 		}
