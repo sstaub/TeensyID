@@ -1,5 +1,4 @@
 /* TeensyMAC library code is placed under the MIT license
- * Copyright (c) 2016 Frank Bösing
  * Copyright (c) 2017 Stefan Staub
  *
  * Permission is hereby granted, free of charge, to any person obtaining
@@ -28,7 +27,7 @@
 
 #define MY_SYSREGISTERFILE	((uint8_t *)0x40041000) // System Register File
 
-static uint32_t _getserialhw(void) {
+static uint32_t getTeensySerial(void) {
 	uint32_t num;
 	__disable_irq();
 	#if defined(HAS_KINETIS_FLASH_FTFA) || defined(HAS_KINETIS_FLASH_FTFL)
@@ -51,72 +50,59 @@ static uint32_t _getserialhw(void) {
 	return num;
 	}
 
-#if defined(HAS_KINETIS_FLASH_FTFE) && (F_CPU > 120000000)
-
-	extern "C" void startup_early_hook(void) {
-		#if defined(KINETISK)
-  		WDOG_STCTRLH = WDOG_STCTRLH_ALLOWUPDATE;
-		#elif defined(KINETISL)
-  		SIM_COPC = 0;  // disable the watchdog
-		#endif
-		*(uint32_t*)(MY_SYSREGISTERFILE) = _getserialhw();
-		}
-
 	uint32_t teensyUsbSN() {
-		uint32_t num;
-		num = *(uint32_t*)(MY_SYSREGISTERFILE);
+		uint32_t num = getTeensySerial();
 		if (num < 10000000) num = num * 10;
 		return num;
 		}
 
 	void teensySN(uint8_t *sn) {
-		uint32_t num;
-		num = *(uint32_t*)(MY_SYSREGISTERFILE);
-		uint8_t *serial = (uint8_t *) &num; // itoa
-		sn[0] = serial [3]; // -> little endian
-		sn[1] = serial [2];
-		sn[2] = serial [1];
-		sn[3] = serial [0];
+		uint32_t num = getTeensySerial();
+		sn[0] = num >> 24;
+		sn[1] = num >> 16;
+		sn[2] = num >> 8;
+		sn[3] = num;
 		}
 
 	const char* teensySN(void) {
-		uint32_t num;
-		uint8_t sn[4];
-		num = *(uint32_t*)(MY_SYSREGISTERFILE);
-		uint8_t *serial = (uint8_t *) &num; // itoa
-		sn[0] = serial [3]; // -> little endian
-		sn[1] = serial [2];
-		sn[2] = serial [1];
-		sn[3] = serial [0];
+		uint8_t serial[4];
 		static char teensySerial[12];
-		sprintf(teensySerial, "%02x-%02x-%02x-%02x", sn[0], sn[1], sn[2], sn[3]);
+		teensySN(serial);
+		sprintf(teensySerial, "%02x-%02x-%02x-%02x", serial[0], serial[1], serial[2], serial[3]);
 		return teensySerial;
 		}
 
 	void teensyMAC(uint8_t *mac) {
+<<<<<<< HEAD
+		uint8_t serial[4];
+		teensySN(serial);
+		mac[0] = 0x04;
+		mac[1] = 0xE9;
+		mac[2] = 0xE5;
+		mac[3] = serial[1];
+		mac[4] = serial[2];
+		mac[5] = serial[3];
+=======
 		uint64_t mac64 = 0x04E9E5000000ULL | (*(uint32_t*)(MY_SYSREGISTERFILE));
 		mac[0] = mac64 >> 40;
-	  mac[1] = mac64 >> 32;
-	  mac[2] = mac64 >> 24;
-	  mac[3] = mac64 >> 16;
-	  mac[4] = mac64 >> 8;
-	  mac[5] = mac64;
+	 	mac[1] = mac64 >> 32;
+	 	mac[2] = mac64 >> 24;
+	 	mac[3] = mac64 >> 16;
+	 	mac[4] = mac64 >> 8;
+	 	mac[5] = mac64;
+>>>>>>> origin/master
 		}
 
 	const char* teensyMAC(void) {
-		uint64_t mac64 = 0x04E9E5000000ULL | (*(uint32_t*)(MY_SYSREGISTERFILE));
 		uint8_t mac[6];
-		mac[0] = mac64 >> 40;
-		mac[1] = mac64 >> 32;
-		mac[2] = mac64 >> 24;
-		mac[3] = mac64 >> 16;
-		mac[4] = mac64 >> 8;
-		mac[5] = mac64;
 		static char teensyMac[18];
+		teensyMAC(mac);
 		sprintf(teensyMac, "%02x:%02x:%02x:%02x:%02x:%02x", mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
 		return teensyMac;
 		}
 
+<<<<<<< HEAD
+=======
 #else
 
 	uint32_t teensyUsbSN() {
@@ -153,63 +139,108 @@ static uint32_t _getserialhw(void) {
 	void teensyMAC(uint8_t *mac) {
 		uint64_t mac64 = 0x04E9E5000000ULL | _getserialhw();
 		mac[0] = mac64 >> 40;
-	  mac[1] = mac64 >> 32;
-	  mac[2] = mac64 >> 24;
-	  mac[3] = mac64 >> 16;
-	  mac[4] = mac64 >> 8;
-	  mac[5] = mac64;
+	 	mac[1] = mac64 >> 32;
+		mac[2] = mac64 >> 24;
+	  	mac[3] = mac64 >> 16;
+	  	mac[4] = mac64 >> 8;
+	  	mac[5] = mac64;
 		}
 	const char* teensyMAC(void) {
 		uint64_t mac64 = 0x04E9E5000000ULL | _getserialhw();
 		uint8_t mac[6];
 		mac[0] = mac64 >> 40;
-	  mac[1] = mac64 >> 32;
-	  mac[2] = mac64 >> 24;
-	  mac[3] = mac64 >> 16;
-	  mac[4] = mac64 >> 8;
-	  mac[5] = mac64;
+	  	mac[1] = mac64 >> 32;
+	  	mac[2] = mac64 >> 24;
+	  	mac[3] = mac64 >> 16;
+	  	mac[4] = mac64 >> 8;
+	  	mac[5] = mac64;
 		static char teensyMac[18];
 		sprintf(teensyMac, "%02x:%02x:%02x:%02x:%02x:%02x", mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
-	  return teensyMac;
+	  	return teensyMac;
 		}
 #endif
 
+>>>>>>> origin/master
 #if defined (__MKL26Z64__) // 80bit UID Teensy LC
 
 	void kinetisUID(uint32_t *uid) {
-		uid[1] = SIM_UIDMH;
-  	uid[2] = SIM_UIDML;
-  	uid[3] = SIM_UIDL;
+		uid[0] = SIM_UIDMH;
+<<<<<<< HEAD
+		uid[1] = SIM_UIDML;
+		uid[2] = SIM_UIDL;
+=======
+  		uid[1] = SIM_UIDML;
+  		uid[2] = SIM_UIDL;
+>>>>>>> origin/master
 		}
 
 	const char* kinetisUID(void) {
 		uint32_t uid[3];
 		static char uidString[27];
-		uid[1] = SIM_UIDMH;
-  	uid[2] = SIM_UIDML;
-  	uid[3] = SIM_UIDL;
-  	sprintf(uidString, "%08x-%08x-%08x", uid[0], uid[1], uid[2]);
+<<<<<<< HEAD
+		kinetisUID(uid);
+		sprintf(uidString, "%08x-%08x-%08x", uid[0], uid[1], uid[2]);
+=======
+		uid[0] = SIM_UIDMH;
+  		uid[1] = SIM_UIDML;
+  		uid[2] = SIM_UIDL;
+  		sprintf(uidString, "%08x-%08x-%08x", uid[0], uid[1], uid[2]);
+>>>>>>> origin/master
 		return uidString;
 	}
 
 #elif defined (__MK20DX128__) || defined (__MK20DX256__) || defined (__MK64FX512__) || defined (__MK66FX1M0__) // 128bit UID Teensy 3.0, 3.1, 3.2, 3.5, 3.6
 
 	void kinetisUID(uint32_t *uid) {
-  	uid[0] = SIM_UIDH;
-  	uid[1] = SIM_UIDMH;
-  	uid[2] = SIM_UIDML;
-  	uid[3] = SIM_UIDL;
+  		uid[0] = SIM_UIDH;
+  		uid[1] = SIM_UIDMH;
+  		uid[2] = SIM_UIDML;
+  		uid[3] = SIM_UIDL;
 		}
 
 	const char* kinetisUID(void) {
 		uint32_t uid[4];
 		static char uidString[36];
-		uid[0] = SIM_UIDH;
-  	uid[1] = SIM_UIDMH;
-  	uid[2] = SIM_UIDML;
-  	uid[3] = SIM_UIDL;
+<<<<<<< HEAD
+		kinetisUID(uid);
   	sprintf(uidString, "%08x-%08x-%08x-%08x", uid[0], uid[1], uid[2], uid[3]);
+=======
+		uid[0] = SIM_UIDH;
+  		uid[1] = SIM_UIDMH;
+  		uid[2] = SIM_UIDML;
+  		uid[3] = SIM_UIDL;
+  		sprintf(uidString, "%08x-%08x-%08x-%08x", uid[0], uid[1], uid[2], uid[3]);
+>>>>>>> origin/master
 		return uidString;
-	}
+		}
 
 #endif
+
+void teensyUUID(uint8_t *uuid) {
+	uint8_t mac[6];
+	teensyMAC(mac);
+	uuid[0] = SIM_UIDML >> 24;
+	uuid[1] = SIM_UIDML >> 16;
+	uuid[2] = SIM_UIDML >> 8;
+	uuid[3] = SIM_UIDML;
+	uuid[4] = SIM_UIDL >> 24;
+	uuid[5] = SIM_UIDL >> 16;
+	uuid[6] = 0x40; // marked as version v4, but this uuid is not random based !!!
+	uuid[7] = SIM_UIDL >> 8;
+	uuid[8] = 0x80; //variant
+	uuid[9] = SIM_UIDL;
+	uuid[10] = mac[0];
+	uuid[11] = mac[1];
+	uuid[12] = mac[2];
+	uuid[13] = mac[3];
+	uuid[14] = mac[4];
+	uuid[15] = mac[5];
+	}
+
+const char* teensyUUID(void) {
+	uint8_t uuid[16];
+	static char uuidString[37];
+	teensyUUID(uuid);
+	sprintf(uuidString, "%02x%02x%02x%02x-%02x%02x-%02x%02x-%02x%02x-%02x%02x%02x%02x%02x%02x", uuid[0], uuid[1], uuid[2], uuid[3], uuid[4], uuid[5], uuid[6], uuid[7], uuid[8], uuid[9], uuid[10], uuid[11], uuid[12], uuid[13], uuid[14], uuid[15]);
+	return uuidString;
+	}
