@@ -38,7 +38,7 @@ void setup() {
 void loop() {}
 ```
 
-- just as it sounds, read and print out serial, mac, uid, uuid 
+- Just as it sounds, read and print out serial, mac, uid, uuid 
 - Typical output:
 ```
 USB Serialnumber: 1244570 
