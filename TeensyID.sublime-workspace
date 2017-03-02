@@ -1,0 +1,987 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"INPUT",
+				"INPUT_PULLUP"
+			],
+			[
+				"VOUT",
+				"VOUT_COMMAND"
+			],
+			[
+				"menu",
+				"menu_timeout"
+			],
+			[
+				"task",
+				"task_time_reset"
+			],
+			[
+				"menu_acc",
+				"menu_access_run_action"
+			],
+			[
+				"times",
+				"times_here"
+			],
+			[
+				"lcd",
+				"lcd_text_ptr_a"
+			],
+			[
+				"drawer",
+				"drawer_ok"
+			],
+			[
+				"return",
+				"return_this"
+			],
+			[
+				"id",
+				"id_digit"
+			],
+			[
+				"habitat",
+				"habitat_a_menu_ptr"
+			],
+			[
+				"extend",
+				"extend_msec"
+			],
+			[
+				"action",
+				"action_msg_16chars"
+			],
+			[
+				"tod",
+				"TODO"
+			],
+			[
+				"update",
+				"update_lcd_a"
+			],
+			[
+				"def",
+				"deflt"
+			],
+			[
+				"ha",
+				"habitat_b_menu_changed"
+			],
+			[
+				"heat",
+				"heat_lamps_all_on"
+			],
+			[
+				"heat_lamps_all",
+				"heat_lamps_all_on"
+			],
+			[
+				"menu_service",
+				"menu_service_autocycle_action"
+			],
+			[
+				"mnu",
+				"menu_timers"
+			],
+			[
+				"lcd_text",
+				"lcd_text_ptr_b"
+			],
+			[
+				"menu_test",
+				"menu_test_fluorescent_action"
+			],
+			[
+				"min",
+				"min_task_time"
+			],
+			[
+				"b2",
+				"B2BWEC"
+			],
+			[
+				"act",
+				"act_ptr"
+			],
+			[
+				"men",
+				"menu_update_tick"
+			],
+			[
+				"stat",
+				"state_msg_Str1"
+			],
+			[
+				"habita",
+				"habitat_a_menu_ptr"
+			],
+			[
+				"input",
+				"inputString1"
+			],
+			[
+				"menu_act",
+				"menu_action1"
+			],
+			[
+				"init",
+				"menu_init"
+			],
+			[
+				"SALT",
+				"SALT_serial_event"
+			],
+			[
+				"bu",
+				"bufferString1Ready"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/BAB/Documents/code/Arduino/WIZ820io_Test/ILI9341_WIZ820_Test/ILI9341_WIZ820_Test.ino",
+			"settings":
+			{
+				"buffer_size": 7228,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/BAB/Documents/code/Arduino/W5500_Test/DhcpStressTest-T3/DhcpStressTest-T3.ino",
+			"settings":
+			{
+				"buffer_size": 11019,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/BAB/Documents/code/Arduino/W5500_Test/NtpTest/NtpTest.ino",
+			"settings":
+			{
+				"buffer_size": 6067,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/BAB/Documents/code/Arduino/W5500_Test/README.md",
+			"settings":
+			{
+				"buffer_size": 7386,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "TeensyID.h",
+			"settings":
+			{
+				"buffer_size": 4060,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "TeensyID.cpp",
+			"settings":
+			{
+				"buffer_size": 4667,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "examples/ReadAll/ReadAll.ino",
+			"settings":
+			{
+				"buffer_size": 2532,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "upp",
+		"selected_items":
+		[
+			[
+				"upp",
+				"Convert Case: Upper Case"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Preferences: Settings - User"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 120.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/BAB/Documents/code/Arduino/W5500_Test",
+		"/D/arduino-1.8.1-TD1v35/hardware/teensy/avr/libraries/Ethernet/examples",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Ethernet2/src",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/TeensyID/examples",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/TeensyID/examples/ReadAll",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/T3Mac",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/T3Mac/example",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/T3Mac/example/T3_readmac",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/TeensyMAC"
+	],
+	"file_history":
+	[
+		"/C/Users/BAB/Documents/code/Arduino/libraries/T3Mac/README.md",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/T3Mac/example/T3_readmac/T3_readmac.ino",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/T3Mac/T3Mac.h",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/T3Mac/T3Mac.cpp",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/TeensyID/README.md",
+		"/C/Users/BAB/Documents/code/bash_scripts/pull.sh",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/TeensyMAC/TeensyMAC.cpp",
+		"/C/Users/BAB/AppData/Local/Temp/wzf9c9/T3Mac/T3Mac.cpp",
+		"/C/Users/BAB/AppData/Local/Temp/wz5aad/T3Mac/T3Mac.h",
+		"/C/Users/BAB/AppData/Local/Temp/wzee64/T3Mac/T3Mac.cpp",
+		"/C/Users/BAB/AppData/Local/Temp/wzed7a/T3Mac/T3Mac.h",
+		"/L/logs/2016/Nov/log_2016-11-07.txt",
+		"/L/logs/2000/Feb/log_2000-02-24.txt",
+		"/L/logs/2017/Feb/log_2017-02-26.txt",
+		"/L/logs/2017/Feb/log_2017-02-25.txt",
+		"/C/Users/BAB/Documents/code/Arduino/W5500_Test/NtpTest/NtpTest.ino",
+		"/C/Users/BAB/Documents/code/Arduino/W5500_Test/DhcpStressTest-M0Pro/DhcpStressTest-M0Pro.ino",
+		"/C/Users/BAB/Documents/code/Arduino/W5500_Test/NtpTest-M0Pro/NtpTest-M0Pro.ino",
+		"/C/Users/BAB/Documents/code/Arduino/W5500_Test/Hello_M0Pro/Hello_M0Pro.ino",
+		"/C/Users/BAB/Documents/code/Arduino/W5500_Test/DhcpStressTest-T3/DhcpStressTest-T3.ino",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_utilities/SALT_utilities.h",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_MB85RC256V/examples/SALT_diagnostics/SALT_diagnostics.ino",
+		"/C/Users/BAB/Documents/code/Arduino/NAP-SALT2-TEST/SD_card/SdInfo/SdInfo.ino",
+		"/C/Users/BAB/Documents/code/Arduino/NAP-SALT2-TEST/SD_card/MOSI_Test/MISO_Test.ino",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/NAP_pod_load_defs/SALT.h",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_MB85RC256V/examples/ini_loader_SD/ini_loader_SD.ino",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_MB85RC256V/examples/ini_loader/ini_loader.ino",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_MB85RC256V/ini_files/sswec_20170219.ini",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_MB85RC256V/examples/rcv_ini_file/SALT_INI_File_Issues.md",
+		"/C/Users/BAB/Documents/code/Arduino/SALT_reptile/SALT_reptile.ino",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_LCM300Q/examples/LCM300Q_MonitorDemo/LCM300Q_MonitorDemo.ino",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_LCM300Q/Systronix_LCM300Q.cpp",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_LCM300Q/Systronix_LCM300Q.h",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_menu/SALT_menu_act.cpp",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_UI/NAP_UI_key_defs.h",
+		"/C/Users/BAB/Documents/code/Arduino/SALT_CodeUpdates/b2bwec.ini",
+		"/C/napserver/start.bat",
+		"/C/napserver/apache24/logs/error.log",
+		"/E/NAP/cpld_2016/cpld/CPLD.jed",
+		"/E/NAP/cpld_2016/cpld/CPLD_20040106.jed",
+		"/C/Users/BAB/Documents/code/Arduino/SALT_CodeUpdates/habitat_blank.ini",
+		"/X/INCOMING/Temp/napserver_logs/20161111.error.log",
+		"/X/INCOMING/Temp/napserver_logs/20161111a.error.log",
+		"/X/INCOMING/Temp/napserver_logs/error.log",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Ethernet2/examples/DhcpAddressPrinter/DhcpAddressPrinter.ino",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_MB85RC256V/ini_files/habitat_blank.ini",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_menu/SALT_menu_act.h",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_menu/README.md",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_menu/SALT_menu_init.inl",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_menu/SALT_menu.cpp",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_menu/SALT_menu.h",
+		"/E/BAB/Google Drive/NorthAmericanPet/SALT_Simple_ALternate_TINI/BackOffice/sqlite2_export/data_from_sqlite2.sql",
+		"/C/napserver/napserver/dat_files/data.dat",
+		"/C/napserver/napserver/dat_files/Floorplan.dat",
+		"/E/BAB/Google Drive/NorthAmericanPet/BackOfficeFiles/FromPetcoFetch/iface.dat",
+		"/E/BAB/Google Drive/NorthAmericanPet/BackOfficeFiles/FromPetcoFetch/Floorplan.dat",
+		"/C/Users/BAB/Documents/code/napserver_fromstore/napserver/docs/HabitatSelector_Millenium.php",
+		"/C/Users/BAB/Documents/code/napserver_fromstore/napserver/dat_files/Floorplan.dat",
+		"/C/Users/BAB/Documents/code/napserver_fromstore/napserver/docs/data.dat",
+		"/C/Users/BAB/Documents/code/napserver_fromstore/napserver/dat_files/iface.dat",
+		"/C/Users/BAB/Documents/code/napserver_fromstore/napserver/dat_files/Log.dat",
+		"/C/Users/BAB/Documents/code/napserver_fromstore/napserver/dat_files/data.dat",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_drawer_locks/README.md",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Ethernet2/README.md",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_MB85RC256V/ini_files/b2bwec.ini",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SdFat/src/SdFat.h",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SdFat/README.md",
+		"/C/Users/BAB/Documents/code/Arduino/NAP-SALT2-TEST/README.md",
+		"/C/Users/BAB/AppData/Local/Temp/build745c5bd38e0b05ecbd7c475088bd93f9.tmp/build.options.json",
+		"/C/Users/BAB/Documents/code/Arduino/SALT_reptile/SALT_reptile.h",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_utilities/SALT_utilities.cpp",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_UI/SALT_serial_event.h",
+		"/C/Users/BAB/Documents/code/Arduino/SALT_reptile/readme.md",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_MB85RC256V/ini_files/sswec.ini",
+		"/C/Users/BAB/Documents/code/Arduino/SALT_CodeUpdates/b2bwec.20160913.ini",
+		"/C/Users/BAB/Documents/code/Arduino/LLC/DemoB-1v01/DemoB-1v01.ino",
+		"/C/Users/BAB/Documents/code/Arduino/LLC/LLC-P1EP-Plus-1v04a/LLC-P1EP-Plus-1v04a.ino",
+		"/C/Users/BAB/Documents/code/Arduino/SALT_CodeUpdates/b2bwec20160910.ini",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_MB85RC256V/examples/ini_loader/ini_loader.h",
+		"/C/Users/BAB/Documents/code/Arduino/SALT_reptile/SALT_heater_manager.h",
+		"/C/Users/BAB/Documents/code/Arduino/SALT_reptile/SALT_heater_manager.cpp",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_heat_control/SALT_heat_control.cpp",
+		"/C/Users/BAB/Documents/code/napserver_fromstore/README.md",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_UI/README.md",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_menu/examples/MenuTest/MenuTest.ino",
+		"/E/BAB/Google Drive/NorthAmericanPet/SALT_Simple_ALternate_TINI/BackOffice/Reptile-Serial-Captures/serial_capture_menus_20160720.txt",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_UI/SALT_UI.cpp",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_UI/SALT_UI.h",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_settings/SALT_settings.h",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_MB85RC256V/examples/rcv_ini_file/sswec.ini",
+		"/C/Users/BAB/Documents/code/Arduino/SALT_CodeUpdates/b2bwec_20160804.ini",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_MB85RC256V/readme.md",
+		"/E/BAB/Google Drive/NorthAmericanPet/SALT_Simple_ALternate_TINI/BackOffice/Reptile-Serial-Captures/serial_capture_diag_20160720b.txt",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_UI/SALT_serial_event.code",
+		"/C/Users/BAB/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/E/projects/NAP_Jimmy/v2_3_firm/build.bat",
+		"/E/projects/NAP_Jimmy/v2_3_firm/lib/IO.a51",
+		"/E/projects/NAP_Jimmy/v2_3_firm/Firm.tini",
+		"/E/projects/NAP_Jimmy/v2_3_firm/src/napv2_3/io/Side.java",
+		"/E/projects/NAP_Jimmy/v2_3_firm/src/napv2_3/io/IO.java",
+		"/C/Users/BAB/Documents/code/Arduino/SALT_CodeUpdates/b2bwec_20160808.ini",
+		"/C/Users/BAB/AppData/Roaming/Sublime Text 3/Packages/User/C++.sublime-settings",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_settings/SALT_settings.cpp",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_MB85RC256V/examples/fram_test/fram_test.ino",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_TMP102/examples/TMP102_LibraryTest/TMP102_LibraryTest.ino",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_MB85RC256V/examples/rcv_ini_file/'SALT_INI_File_Issues'",
+		"/C/Users/BAB/Documents/code/Arduino/SALT_CodeUpdates/sswec.ini",
+		"/C/Users/BAB/Documents/code/Arduino/SALT_CodeUpdates/b2bwec_NoComments_20160805.ini",
+		"/C/Users/BAB/Documents/code/Arduino/SALT_CodeUpdates/b2bwec_ShorterComments_20160805.ini",
+		"/C/Users/BAB/Documents/code/Arduino/Teensy_HelperApps/readme.md",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_TMP102/README.md",
+		"/C/Users/BAB/Documents/code/Arduino/Teensy_PC_Tools/readme.md",
+		"/C/Users/BAB/Documents/code/Arduino/SALT_CodeUpdates/readme.md",
+		"/C/Users/BAB/Documents/code/Arduino/SALT_Tools/readme.md",
+		"/C/Users/BAB/Documents/code/Arduino/SALT_tools/readme.md",
+		"/C/Users/BAB/AppData/Local/Temp/build87e93bcedc5abcaee1f2a933be31f475.tmp/sketch/rcv_ini_file.ino.cpp.o",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/Systronix_MB85RC256V/examples/rcv_ini_file/rcv_ini_file.ino",
+		"/C/Users/BAB/AppData/Roaming/Sublime Text 3/Local/Session.sublime_session",
+		"/C/Users/BAB/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/BAB/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/BAB/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/BAB/Documents/code/Sublime_projects/Temp1.sublime-project",
+		"/C/Users/BAB/Documents/code/Sublime_projects/Sublime_SALT-menu.sublime-workspace",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_menu/scraps.cpp.txt",
+		"/C/Users/BAB/Documents/code/Arduino/libraries/SALT_UI/examples/UI_SerialEventTest/UI_SerialEventTest.ino",
+		"/C/Users/BAB/Documents/workspace_old_c/GTE/c_source_files/ACTIONS.C",
+		"/C/Users/BAB/Documents/workspace_old_c/GTE/c_source_files/MENACT.C",
+		"/C/Users/BAB/Documents/workspace_old_c/GTE/c_source_files/SDM650_A.C"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"mac",
+			"teensy_mac",
+			"getTeensySerial",
+			"mac",
+			"* ",
+			"CS_PIN",
+			"mac",
+			"CS_PIN",
+			"LCM300Q",
+			"TMP102",
+			"push",
+			"uSD",
+			"uSD_DETECT",
+			"timeout",
+			"menu_menu",
+			"timeout",
+			"menu_menu",
+			"menu_config",
+			"config",
+			"CONFIG",
+			"!pause",
+			"SS",
+			"select",
+			"SS",
+			"ss",
+			"SS",
+			"SD_CHIP_SELECT",
+			"KEYDEFAULT",
+			"// go to pin# menu",
+			"timeout",
+			"chirp",
+			"menu_timers",
+			"utils.is_task_time ",
+			"change_display_tick",
+			"ffwd",
+			"return_this",
+			"G14",
+			"};\t// default next menu\n};",
+			"NULL ",
+			"NULL",
+			"rights",
+			"pin is a 5",
+			"rights",
+			"associate",
+			"deflt",
+			"dflt",
+			"deflt",
+			"progress",
+			"dawn",
+			"menu_menu_pin",
+			"menu_care_pin",
+			"menu_access_run",
+			"menu_access",
+			"menu_run",
+			"menu_care",
+			"menu_care_action",
+			"care_",
+			"care",
+			"core",
+			"times_here",
+			"menu_time_edit",
+			"menu_time_show",
+			"care",
+			"dawn",
+			"#",
+			"menu_ptr->usb_text_ptr",
+			"menu_dawn",
+			"System",
+			"Sytstem error",
+			"menu_dusk",
+			"schedule",
+			"menu_clock",
+			"menu_time",
+			"menu_time_show",
+			"menu_clock_show",
+			"menu_clock",
+			"menu_dawndusk",
+			"menu_dawn",
+			"menu_dawndusk",
+			"menu_schedule",
+			"dawn",
+			"clock",
+			"time_counter",
+			"SALT_settings",
+			"settings",
+			"logged_in_user",
+			"name",
+			"keyval",
+			"pin_entered",
+			"id_entered",
+			"id_digit",
+			"setting",
+			"pin",
+			"printf",
+			"menu_access_run",
+			"case",
+			"// eventually will go to pin# menu",
+			"menu_access",
+			"menu_run",
+			"menu_restart_now",
+			"not",
+			"menu_factory_lamps_walking_1",
+			"menu_factory_lamps_by_drawer",
+			"htr_mgr",
+			"times_here",
+			"cycler_2",
+			"menu_factory_lamps_by_drawer",
+			"heat_lamp",
+			"dwr_heat_lamp",
+			"pad",
+			"menu_factory_autocycle_start",
+			"MENU_CYCLE",
+			"by_drawer",
+			"menu_factory_autocycle",
+			"min_display_time",
+			"interval",
+			"menu_factory_interval",
+			"test_interval",
+			"utils.task_time_reset(",
+			"change_display_tick",
+			"menu_factory_autocycle",
+			"act_ptr",
+			"printf",
+			"key_data",
+			"(menu_obj* menu_ptr)",
+			"(menu_obj*)",
+			"(menu_obj*",
+			"ON"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"t_mac",
+			"",
+			"LCM300",
+			"LCM300Q",
+			"menu_network",
+			"// pin # handled from this menu",
+			"};\t// default next menu",
+			"NULL, \t// default next menu\nNULL, \t// timeout menu\nTIMEOUT_MENU_LONG,\t// timeout value in msec\nALL_ACCESS\t\t\t// min access rights needed\n};",
+			"menu_drawer_pin",
+			"menu_menu_pin",
+			"menu_drawer_pin",
+			"menu_care_pin",
+			"menu_zone_edit",
+			"menu_zone_show",
+			"menu_time_date_show",
+			"menu_dusk",
+			"menu_date",
+			"menu_time_edit",
+			"menu_time_show",
+			"menu_dawn_dusk",
+			"menu_dawn_edit",
+			"menu_dawn",
+			"menu_dawndusk",
+			"pin_value",
+			"pin_entered",
+			"pin_digit",
+			"menu_access_failed",
+			"menu_access_success",
+			"// go to pin# menu",
+			"",
+			"menu_access_run",
+			"menu_access",
+			"menu_notyet",
+			"menu_factory_pads_walking_1",
+			"menu_factory_lamps_walking_1",
+			"menu_factory_pads_by_drawer",
+			"heat_pad",
+			"dwr_heat_pad",
+			"by_drawer_run",
+			"menu_factory_lamps_by_drawer",
+			"test_interval",
+			"menu_factory_interval_set",
+			"menu_factory_interval",
+			"(menu_obj* menu_ptr, uint8_t keyval)",
+			"(menu_obj*, uint8_t)",
+			"(menu_obj*, uint8_t",
+			"_factory",
+			"LIGHT_",
+			"_light_",
+			"_factory",
+			"PAD_",
+			"menu_test_pad_start",
+			"menu_temp_clear;",
+			"menu_temp_clear]",
+			"menu_temp_clear.",
+			"menu_temp_cleared.",
+			"menu_temp_cleared",
+			"no purpose",
+			"menu_service_autocycle",
+			"menu_service",
+			"menu_test_lamp_on",
+			"menu_test_lamp_start",
+			"menu_clock_show",
+			"menu_obj* menu_ptr",
+			"menu_obj*",
+			"menu_restart_now",
+			"menu_timers",
+			"menu_test_fluorescent",
+			"menu_test_pad",
+			"menu_test_lamp",
+			"fluorescent_onoff",
+			"fluorescent",
+			"&menu_diagnostic_keycode",
+			"menu_diagnostic_keycode.",
+			"alarm",
+			"K9 <DOWN/OFF>",
+			"K4 <ENTER>",
+			"menu_diagnostic",
+			"menu_config",
+			"menu_reboot",
+			"menu_test",
+			".down",
+			"menu_temp_clear",
+			"menu_temp_low",
+			"menu_temp_high",
+			"menu_temp_current",
+			"menu_sensor",
+			"menu_enviro",
+			"menu_schedule",
+			"no purpose at root clock menu",
+			"time set",
+			"menu_clock",
+			"settings.sys_settings.",
+			"settings.sys_settings,",
+			"settings.sys_settings",
+			"settings",
+			"code",
+			"Documents/code/Arduino",
+			"code",
+			"&menu_init",
+			"&menu_por",
+			"menu_por",
+			"key1.text_ptr",
+			"key1.raw",
+			"key1.fresh",
+			"menu_init",
+			"key1_raw",
+			"*key",
+			"menu_obj",
+			"",
+			"SALT_UI",
+			"",
+			",",
+			"",
+			"[] =",
+			"const char",
+			"_inChar"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/BAB/Documents/code/Arduino/WIZ820io_Test/ILI9341_WIZ820_Test/ILI9341_WIZ820_Test.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1682,
+								1682
+							]
+						],
+						"settings":
+						{
+							"function_name_status_row": 51,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 714.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/BAB/Documents/code/Arduino/W5500_Test/DhcpStressTest-T3/DhcpStressTest-T3.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11019,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10250,
+								10279
+							]
+						],
+						"settings":
+						{
+							"function_name_status_row": 377,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4883.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/BAB/Documents/code/Arduino/W5500_Test/NtpTest/NtpTest.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6067,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2543,
+								2543
+							]
+						],
+						"settings":
+						{
+							"function_name_status_row": 76,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 210.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/BAB/Documents/code/Arduino/W5500_Test/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7386,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6825,
+								6234
+							]
+						],
+						"settings":
+						{
+							"function_name_status_row": 45,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 504.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "TeensyID.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4060,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2815,
+								2801
+							]
+						],
+						"settings":
+						{
+							"function_name_status_row": 72,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 714.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "TeensyID.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4667,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1315,
+								1330
+							]
+						],
+						"settings":
+						{
+							"function_name_status_row": -1,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 1302.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "examples/ReadAll/ReadAll.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2532,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1996,
+								2101
+							]
+						],
+						"settings":
+						{
+							"function_name_status_row": 54,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.stino_log":
+	{
+		"height": 94.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 153.0
+	},
+	"pinned_build_system": "",
+	"project": "TeensyID.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\BAB\\Documents\\code\\Sublime_projects\\Ethernet2.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 247.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

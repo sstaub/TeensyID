@@ -1,0 +1,26 @@
+{
+	"folders":
+	[
+		{
+			"path": "C:\\Users\\BAB\\Documents\\code\\Arduino\\WIZ820io_Test\\ILI9341_WIZ820_Test"
+		},
+		{
+			"path": "C:\\Users\\BAB\\Documents\\code\\Arduino\\W5500_Test"
+		},
+		{
+			"path": "D:\\arduino-1.8.1-TD1v35\\hardware\\teensy\\avr\\libraries\\Ethernet"
+		},
+		{
+			"path": "C:\\Users\\BAB\\Documents\\code\\Arduino\\libraries\\Ethernet2"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "C:\\Users\\BAB\\Documents\\code\\Arduino\\libraries\\T3Mac"
+		},
+		{
+			"path": "C:\\Users\\BAB\\Documents\\code\\Arduino\\libraries\\TeensyMAC"
+		}
+	]
+}
