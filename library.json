@@ -1,0 +1,14 @@
+{
+  "name": "TeensyID",
+  "keywords": "MAC, Serialnumber, ChipID",
+  "description": "Set of functions for different IDs of the Teensy: USB Serialnumber, Serialnumber, MAC-Address, ChipID.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/sstaub/TeensyID"
+  },
+  "version": "1.1.1",
+  "frameworks": "arduino",
+  "platforms": "Teensy"
+}
+
