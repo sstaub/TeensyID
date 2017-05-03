@@ -22,6 +22,11 @@
  * SOFTWARE.
  */
 
+/** Revisions
+20170503 bboyes/systronix change uidString length to be long unsigned to eliminate compiler data type warning
+*/
+
+
 #include "TeensyID.h"
 #include <Arduino.h>
 
@@ -68,7 +73,7 @@ static uint32_t getTeensySerial(void) {
 		uint8_t serial[4];
 		static char teensySerial[12];
 		teensySN(serial);
-		sprintf(teensySerial, "%02x-%02x-%02x-%02x", serial[0], serial[1], serial[2], serial[3]);
+		sprintf(teensySerial, "%02X-%02X-%02X-%02X", serial[0], serial[1], serial[2], serial[3]);
 		return teensySerial;
 		}
 
@@ -87,7 +92,7 @@ static uint32_t getTeensySerial(void) {
 		uint8_t mac[6];
 		static char teensyMac[18];
 		teensyMAC(mac);
-		sprintf(teensyMac, "%02x:%02x:%02x:%02x:%02x:%02x", mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
+		sprintf(teensyMac, "%02X:%02X:%02X:%02X:%02X:%02X", mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
 		return teensyMac;
 		}
 
@@ -103,7 +108,7 @@ static uint32_t getTeensySerial(void) {
 		uint32_t uid[3];
 		static char uidString[27];
 		kinetisUID(uid);
-		sprintf(uidString, "%08x-%08x-%08x", uid[0], uid[1], uid[2]);
+		sprintf(uidString, "%08X-%08X-%08X", uid[0], uid[1], uid[2]);
 		return uidString;
 	}
 
@@ -120,7 +125,7 @@ static uint32_t getTeensySerial(void) {
 		uint32_t uid[4];
 		static char uidString[36];
 		kinetisUID(uid);
-  	sprintf(uidString, "%08x-%08x-%08x-%08x", uid[0], uid[1], uid[2], uid[3]);
+  	sprintf(uidString, "%08lX-%08lX-%08lX-%08lX", uid[0], uid[1], uid[2], uid[3]);
 		return uidString;
 	}
 
@@ -151,6 +156,6 @@ const char* teensyUUID(void) {
 	uint8_t uuid[16];
 	static char uuidString[37];
 	teensyUUID(uuid);
-	sprintf(uuidString, "%02x%02x%02x%02x-%02x%02x-%02x%02x-%02x%02x-%02x%02x%02x%02x%02x%02x", uuid[0], uuid[1], uuid[2], uuid[3], uuid[4], uuid[5], uuid[6], uuid[7], uuid[8], uuid[9], uuid[10], uuid[11], uuid[12], uuid[13], uuid[14], uuid[15]);
+	sprintf(uuidString, "%02X%02X%02X%02X-%02X%02X-%02X%02X-%02X%02X-%02X%02X%02X%02X%02X%02X", uuid[0], uuid[1], uuid[2], uuid[3], uuid[4], uuid[5], uuid[6], uuid[7], uuid[8], uuid[9], uuid[10], uuid[11], uuid[12], uuid[13], uuid[14], uuid[15]);
 	return uuidString;
 	}
