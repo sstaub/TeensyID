@@ -35,7 +35,7 @@
   *
   * uint8_t serial[4];
   * uint8_t mac[6];
-  * uint8_t uid[4];
+  * uint32_t uid[4];
   * uint8_t uuid[16];
   *
   * void setup() {
