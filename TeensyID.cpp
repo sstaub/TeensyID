@@ -103,7 +103,7 @@ static uint32_t getTeensySerial(void) {
 		uint32_t uid[3];
 		static char uidString[27];
 		kinetisUID(uid);
-		sprintf(uidString, "%08x-%08x-%08x", uid[0], uid[1], uid[2]);
+		sprintf(uidString, "%08lx-%08lx-%08lx", uid[0], uid[1], uid[2]);
 		return uidString;
 	}
 
@@ -120,7 +120,7 @@ static uint32_t getTeensySerial(void) {
 		uint32_t uid[4];
 		static char uidString[36];
 		kinetisUID(uid);
-  	sprintf(uidString, "%08x-%08x-%08x-%08x", uid[0], uid[1], uid[2], uid[3]);
+  	sprintf(uidString, "%08lx-%08lx-%08lx-%08lx", uid[0], uid[1], uid[2], uid[3]);
 		return uidString;
 	}
 
