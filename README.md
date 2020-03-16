@@ -2,6 +2,7 @@
 Teensy (USB-)Serialnumber, MAC-Address, Kinetis ChipUID and UUID (RFC4122)
 
 Should work with Teensy LC & Teensy 3.0 ... 3.6
+
 Initial support for Teensy 4 (only MAC address)
 
 - Tested with Teensy 3.5 by sstaub
