@@ -42,11 +42,12 @@ uint32_t uid[4];
 uint8_t uuid[16];
 
 void setup() {
+  Serial.begin(9600);
+  delay(2000);
   teensySN(serial);
   teensyMAC(mac);
   kinetisUID(uid);
   teensyUUID(uuid);
-  delay(2000);
   Serial.printf("USB Serialnumber: %u \n", teensyUsbSN());
   Serial.printf("Array Serialnumber: %02X-%02X-%02X-%02X \n", serial[0], serial[1], serial[2], serial[3]);
   Serial.printf("String Serialnumber: %s\n", teensySN());
