@@ -72,9 +72,9 @@ const char* teensySN(void) {
 	return teensySerial;
 	}
 
-#ifdef ARDUINO_TEENSY40
+#if defined ARDUINO_TEENSY40 || defined ARDUINO_TEENSY41
 
-	void teensyMAC(uint8_t *mac) {
+	void teensyMAC(uint8_t *mac) { // there are 2 MAC addresses each 48bit 
 		uint32_t m1 = HW_OCOTP_MAC1;
 		uint32_t m2 = HW_OCOTP_MAC0;
 		mac[0] = m1 >> 8;
@@ -108,11 +108,13 @@ const char* teensyMAC(void) {
 	return teensyMac;
 	}
 
-#ifdef ARDUINO_TEENSY40
+#if defined ARDUINO_TEENSY40 || defined ARDUINO_TEENSY41
 	void kinetisUID(uint32_t *uid) {
+		
 		}
 
 	const char* kinetisUID(void) {
+		//uint32_t uid = HW_UNIQUE_ID; // 64 bit
 		return "no UID";
 		}
 
@@ -151,7 +153,7 @@ const char* teensyMAC(void) {
 
 #endif
 
-#ifdef ARDUINO_TEENSY40
+#if defined ARDUINO_TEENSY40  || defined ARDUINO_TEENSY41
 
 	void teensyUUID(uint8_t *uuid) {
 
