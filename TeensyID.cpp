@@ -26,7 +26,14 @@
 #include <Arduino.h>
 
 // UNIQUE_ID
+#if defined ARDUINO_TEENSY40 || defined ARDUINO_TEENSY41
+static uint32_t getTeensySerial(void) {
+	uint32_t num;
+	num = HW_OCOTP_MAC0 & 0xFFFFFF;
+	return num;
+	}
 
+#else
 static uint32_t getTeensySerial(void) {
 	uint32_t num = 0;
 	__disable_irq();
@@ -49,6 +56,7 @@ static uint32_t getTeensySerial(void) {
 	__enable_irq();
 	return num;
 	}
+#endif
 
 uint32_t teensyUsbSN() {
 	uint32_t num = getTeensySerial();
@@ -110,11 +118,9 @@ const char* teensyMAC(void) {
 
 #if defined ARDUINO_TEENSY40 || defined ARDUINO_TEENSY41
 	void kinetisUID(uint32_t *uid) {
-		
 		}
 
 	const char* kinetisUID(void) {
-		//uint32_t uid = HW_UNIQUE_ID; // 64 bit
 		return "no UID";
 		}
 
@@ -156,12 +162,32 @@ const char* teensyMAC(void) {
 #if defined ARDUINO_TEENSY40  || defined ARDUINO_TEENSY41
 
 	void teensyUUID(uint8_t *uuid) {
-
 		}
 
 	const char* teensyUUID(void) {
 		return "no UID";
 		}
+
+void teensyUID64(uint8_t *uid64) {
+  uint32_t uid0 = HW_OCOTP_CFG0;
+  uint32_t uid1 = HW_OCOTP_CFG1;
+  uid64[0] = uid0 >> 24;
+  uid64[1] = uid0 >> 16;
+  uid64[2] = uid0 >> 8;
+  uid64[3] = uid0;
+  uid64[4] = uid1 >> 24;
+  uid64[5] = uid1 >> 16;
+  uid64[6] = uid1 >> 8;
+  uid64[7] = uid1;
+	}
+
+const char* teensyUID64(void) {
+	uint8_t uid64[8];
+	static char uid64String[24];
+	teensyUID64(uid64);
+	sprintf(uid64String, "%02x-%02x-%02x-%02x-%02x-%02x-%02x-%02x", uid64[0], uid64[1], uid64[2], uid64[3], uid64[4], uid64[5], uid64[6], uid64[7]);
+	return uid64String;
+	}
 
 #else
 

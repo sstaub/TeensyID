@@ -113,7 +113,7 @@ const char* kinetisUID(void);
 
 /** Teensy UUID (RFC4122)
   *
-  * @param mac Pointer to an array with size of 16 uint8_t which contents the uuid
+  * @param uid Pointer to an array with size of 16 uint8_t which contents the uuid
   *
   * @note
   * It is an UUID extracted from the Kinetis UID and the MAC Address.
@@ -127,5 +127,22 @@ void teensyUUID(uint8_t *uid);
   * A formated string in hex xxxx-xx-xx-xx-xxxxxx
   */
 const char* teensyUUID(void);
+
+/** Teensy UID 64-bit for Teensy 4.x
+  *
+  * @param uid Pointer to an array with size of 16 uint8_t which contents the uuid
+  *
+  * @note
+  * It is an UUID extracted from the Kinetis UID and the MAC Address.
+  * It is marked as version 4, (pseudo)random based
+  */
+void teensyUID64(uint8_t *uid64);
+
+/** Teensy UID 64-bit for Teensy 4.x
+  *
+  * @returns
+  * A formated string in hex xxxx-xx-xx-xx-xxxxxx
+  */
+const char* teensyUID64(void);
 
 #endif

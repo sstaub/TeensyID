@@ -3,17 +3,17 @@ Teensy (USB-)Serialnumber, MAC-Address, Kinetis ChipUID and UUID (RFC4122)
 
 Should work with Teensy LC & Teensy 3.0 ... 3.6
 
-Initial support for Teensy 4 (only MAC address)
+Initial support for Teensy 4.x (only MAC address and 64-bit UID)
 
 - Tested with Teensy 3.5 by sstaub
 - Tested with Teensy 3.2, WIZ850io, PRJC sd/Ethernet adapter, Arduino 1.8.11, TD 1.35, by bboyes
 - Tested with Teensy 3.6 amd LC by manitou
-- Tested with Teensy 4 NN
+- Tested with Teensy 4.x by sstaub
 
 ## Examples
-### ReadAll
-
+### **ReadAll** for Teensy 3.x and LC
 ```
+#include "Arduino.h"
 #include <TeensyID.h>
 
 uint8_t serial[4];
@@ -55,3 +55,29 @@ Array 128-bit UUID RFC4122: 00496017-3138-404E-8045-04E9E501E629
 String 128-bit UUID RFC4122: 00496017-3138-404e-8045-04e9e501e629
 ```
 
+### **T4_ReadAll** for Teensy 4.x
+```
+#include "Arduino.h"
+#include <TeensyID.h>
+
+uint8_t serial[4];
+uint8_t mac[6];
+uint8_t uid64[8];
+
+void setup() {
+  Serial.begin(9600);
+  delay(2000);
+  teensySN(serial);
+  teensyMAC(mac);
+  teensyUID64(uid64);
+  Serial.printf("USB Serialnumber: %u \n", teensyUsbSN());
+  Serial.printf("Array Serialnumber: %02X-%02X-%02X-%02X \n", serial[0], serial[1], serial[2], serial[3]);
+  Serial.printf("String Serialnumber: %s\n", teensySN());
+  Serial.printf("Array MAC Address: %02X:%02X:%02X:%02X:%02X:%02X \n", mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
+  Serial.printf("String MAC Address: %s\n", teensyMAC());
+  Serial.printf("UID 64-bit: %02X-%02X-%02X-%02X-%02X-%02X-%02X-%02X\n", uid64[0], uid64[1], uid64[2], uid64[3], uid64[4], uid64[5], uid64[6], uid64[7]);
+  Serial.printf("UID 64-bit: %s\n", teensyUID64());
+  }
+
+void loop() {}
+```
