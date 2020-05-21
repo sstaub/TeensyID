@@ -1,14 +1,13 @@
 # TeensyID
-Teensy (USB-)Serialnumber, MAC-Address, Kinetis ChipUID and UUID (RFC4122)
+- Teensy (USB-)Serialnumber, MAC-Address, 
+- Kinetis ChipUID and UUID (RFC4122) for Teensy 3.x and LC
+- 64-bit UID for Teensy 4.x
 
-Should work with Teensy LC & Teensy 3.0 ... 3.6
-
-Initial support for Teensy 4.x (only MAC address and 64-bit UID)
-
-- Tested with Teensy 3.5 by sstaub
-- Tested with Teensy 3.2, WIZ850io, PRJC sd/Ethernet adapter, Arduino 1.8.11, TD 1.35, by bboyes
-- Tested with Teensy 3.6 amd LC by manitou
-- Tested with Teensy 4.x by sstaub
+Tested:
+- Teensy 3.5 by sstaub
+- Teensy 3.2, WIZ850io, PRJC sd/Ethernet adapter, Arduino 1.8.11, TD 1.35, by bboyes
+- Teensy 3.6 amd LC by manitou
+- Teensy 4.x by sstaub
 
 ## Examples
 ### **ReadAll** for Teensy 3.x and LC
