@@ -25,7 +25,7 @@
 #ifndef TEENSYID_H
 #define TEENSYID_H
 
-#include <stdint.h>
+#include "Arduino.h"
 
 /** Teens USB Serial Number
   *

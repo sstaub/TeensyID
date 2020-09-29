@@ -23,7 +23,6 @@
  */
 
 #include "TeensyID.h"
-#include <Arduino.h>
 
 // UNIQUE_ID
 #if defined ARDUINO_TEENSY40 || defined ARDUINO_TEENSY41
