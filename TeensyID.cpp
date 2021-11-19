@@ -117,6 +117,7 @@ const char* teensyMAC(void) {
 
 #if defined ARDUINO_TEENSY40 || defined ARDUINO_TEENSY41
 	void kinetisUID(uint32_t *uid) {
+		(void)uid; // suppress warn unused parameter 'uid'
 		}
 
 	const char* kinetisUID(void) {
@@ -161,6 +162,7 @@ const char* teensyMAC(void) {
 #if defined ARDUINO_TEENSY40  || defined ARDUINO_TEENSY41
 
 	void teensyUUID(uint8_t *uuid) {
+		(void)uuid; // suppress warn unused parameter 'uuid'
 		}
 
 	const char* teensyUUID(void) {
