@@ -53,6 +53,7 @@ void setup() {
   Serial.printf("String MAC Address: %s\n", teensyMAC());
   Serial.printf("UID 64-bit: %02X-%02X-%02X-%02X-%02X-%02X-%02X-%02X\n", uid64[0], uid64[1], uid64[2], uid64[3], uid64[4], uid64[5], uid64[6], uid64[7]);
   Serial.printf("UID 64-bit: %s\n", teensyUID64());
+  Serial.printf("Board Model: %s\n", teensyBoardVersion());
   }
 
 void loop() {}
