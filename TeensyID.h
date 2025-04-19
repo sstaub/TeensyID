@@ -107,4 +107,11 @@ void teensyUID64(uint8_t *uid64);
   */
 const char* teensyUID64(void);
 
+/** Teensy Board Version
+  *
+  * @returns
+  * A string containing the board name as specified on https://www.pjrc.com/teensy/
+  */ 
+const char* teensyBoardVersion(void);
+
 #endif

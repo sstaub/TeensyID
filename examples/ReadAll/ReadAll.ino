@@ -57,6 +57,7 @@ void setup() {
   Serial.printf("String 128-bit UniqueID from chip: %s\n", kinetisUID());
   Serial.printf("Array 128-bit UUID RFC4122: %02X%02X%02X%02X-%02X%02X-%02X%02X-%02X%02X-%02X%02X%02X%02X%02X%02X\n", uuid[0], uuid[1], uuid[2], uuid[3], uuid[4], uuid[5], uuid[6], uuid[7], uuid[8], uuid[9], uuid[10], uuid[11], uuid[12], uuid[13], uuid[14], uuid[15]);
   Serial.printf("String 128-bit UUID RFC4122: %s\n", teensyUUID());
+  Serial.printf("Board Model: %s\n", teensyBoardVersion());
   }
 
 void loop() {}
